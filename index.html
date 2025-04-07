@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página Completa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenidos</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#formulario">Formulario</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>Aqui va texto de relleno</p>
+    <button onclick="mostrarAlerta()">Haz clic aquí</button>
+  </section>
+
+  <section id="galeria-local">
+    <h2>Galería</h2>
+    <p>Papoi</p>
+    <img src="anime.png" alt="Mi imagen local">
+  </section>
+  
+  
+  </section>
+
+  <section id="formulario">
+    <h2>Formulario</h2>
+    <form onsubmit="return enviarFormulario()">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <br><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Escríbenos a <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Mi Sitio Web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
